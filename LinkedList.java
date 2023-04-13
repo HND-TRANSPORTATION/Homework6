@@ -152,7 +152,7 @@ public class LinkedList<I extends KeyedElementInterface<K>, K>  implements ListI
 			if (data == null) return null;
 			K currKey = data.getKey();
 			
-			if (key == currKey) {
+			if (key.equals(currKey)) {
 				return data;
 			}
 			
